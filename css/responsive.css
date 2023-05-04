@@ -154,7 +154,17 @@
         height: 50px;
         line-height: 40px;
     }
-
+#banner ul {
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	transform: translateX(-50%);
+	display: flex;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
     .main_menu button i {
         color: #fff;
     }

@@ -167,28 +167,17 @@ ol {
     clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
 }
 
-.banner_item .banner_text .typed{
+
+.banner_item .banner_text .type{
     font-family: 'Faster One', cursive;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 60px;
     color: var(--hover);
     text-transform: uppercase;
     margin-bottom: 18px;
     position: relative;
-    display: block;
     margin: 0;
-    z-index: 99;
-}
-.banner_item .banner_text .type{
-    
-    font-weight: 400;
-    font-size: 30px;
-    color: var(--hover);
-    text-transform: uppercase;
-    margin-bottom: 18px;
-    position: relative;
-    margin: 0;
-    display: block;
+    z-index: 9999;
 }
 .banner_item .banner_text h1{
     font-family: 'Faster One', cursive;

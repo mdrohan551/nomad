@@ -5,7 +5,7 @@ $(function () {
   $('#banner').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay:false,
     autoplaySpeed: 2000,
     arrows: false,
     dots: true,
@@ -139,9 +139,7 @@ $(function () {
     ]
   });
   // type js 
-  var typed = new Typed('.typed', {
-    stringsElement: '.auto'
-  });
+
   var typed = new Typed('.type', {
     stringsElement: '.auto2'
   });
