@@ -439,6 +439,34 @@
 }
 
 @media (max-width: 575.98px) {
+    .banner_item .banner_text .typed {
+	font-family: 'Faster One', cursive;
+	font-weight: 700;
+	font-size: 35px;
+	color: var(--hover);
+	text-transform: uppercase;
+	/*! margin-bottom: 18px; */
+	position: relative;
+	display: block;
+}.banner_item .banner_text .type {
+	font-weight: 400;
+	font-size: 22px;
+	color: var(--hover);
+	text-transform: uppercase;
+	/*! margin-bottom: 18px; */
+	position: relative;
+}
+    #banner ul {
+	position: absolute;
+	left: 50%;
+	bottom: 41px;
+	transform: translateX(-50%);
+	display: flex;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
 
     /* Menu part start */
     .main_menu {
@@ -534,7 +562,10 @@
     #banner ul .slick-active button {
         width: 14px;
         height: 14px;
-    }
+    }.banner_item {
+	position: relative;
+	clip-path: polygon(20% 0%, 0 0, 0 38%, 0 97%, 23% 100%, 47% 97%, 75% 100%, 100% 97%, 100% 47%, 100% 0, 80% 0%, 55% 0);
+}
 
     /* Banner part end */
 

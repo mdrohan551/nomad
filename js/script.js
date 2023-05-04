@@ -138,5 +138,14 @@ $(function () {
       }
     ]
   });
+  // type js 
+  var typed = new Typed('.typed', {
+    stringsElement: '.auto'
+  });
+  var typed = new Typed('.type', {
+    stringsElement: '.auto2'
+  });
+
+  // type js 
 
 });

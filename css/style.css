@@ -154,16 +154,6 @@ ol {
     background: rgba(0, 0, 0, 0.582);
 }
 
-.banner_item .banner_text h2 {
-    font-family: var(--wald);
-    font-weight: 700;
-    font-size: 30px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    position: relative;
-}
-
 
 .banner_item .banner_text h2::after {
     right: -7px;
@@ -177,10 +167,42 @@ ol {
     clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
 }
 
-.banner_item .banner_text h1 {
+.banner_item .banner_text .typed{
     font-family: 'Faster One', cursive;
     font-weight: 700;
     font-size: 60px;
+    color: var(--hover);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+    display: block;
+    margin: 0;
+    z-index: 99;
+}
+.banner_item .banner_text .type{
+    
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--hover);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+    margin: 0;
+    display: block;
+}
+.banner_item .banner_text h1{
+    font-family: 'Faster One', cursive;
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--hover);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+}
+.banner_item .banner_text h2{
+    
+    font-weight: 400;
+    font-size: 30px;
     color: var(--hover);
     text-transform: uppercase;
     margin-bottom: 18px;
@@ -249,7 +271,7 @@ ol {
 #banner ul {
     position: absolute;
     left: 50%;
-    bottom: 33px;
+    bottom: 72px;
     transform: translateX(-50%);
     display: flex;
     -webkit-transform: translateX(-50%);
@@ -291,6 +313,8 @@ ol {
 =========================================================== */
 #about {
     padding: 80px 0 40px;
+    box-shadow: 0 -144px 700px #222;
+    border-radius:50px  50px 0 0px;
 }
 .banner_ab{
     position: absolute;
@@ -307,6 +331,7 @@ ol {
     text-transform: uppercase;
     margin-bottom: 18px;
 }
+
 .about_video img{
     position: relative;
 }
@@ -315,6 +340,7 @@ ol {
 }
 .about_video .padsite{
     clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 79% 93%, 62% 100%, 36% 100%, 17% 92%, 0 99%);
+
 }
 
 .about_video .overly {
@@ -396,6 +422,7 @@ ol {
 =========================================================== */
 #gellary {
     padding: 40px 0;
+    
 }
 
 .gal_banner {
@@ -463,219 +490,6 @@ ol {
 /* =========================================================
                     Team CSS Start
 =========================================================== */
-#team {
-    padding: 35px 0 40px;
-}
-
-.team_main {
-    margin-top: 36px;
-}
-
-.team_main:hover {
-    transform: translateY(-42px);
-    -webkit-transform: translateY(-42px);
-    -moz-transform: translateY(-42px);
-    -ms-transform: translateY(-42px);
-    -o-transform: translateY(-42px);
-}
-
-.team_main .team_img {
-    position: relative;
-}
-
-.team_main .team_img .overly {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: hsla(2, 75%, 55%, 0.5);
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-}
-
-.team_main .team_img .overly ul {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-
-.team_main .team_img .overly a {
-    height: 30px;
-    width: 30px;
-    border: 1px solid #fff;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    margin: 5px 0;
-    font-size: 17px;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-}
-
-.team_main .team_img .overly a:hover {
-    background: #fff;
-    color: #1da0f2;
-}
-
-.team_main:hover .team_img .overly {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-}
-
-.team_main .team_text {
-    text-align: center;
-    margin-top: 0;
-}
-
-.team_main .team_text h3 {
-    font-family: var(--wald);
-    font-weight: 400;
-    font-size: 14px;
-    color: #222;
-    text-transform: uppercase;
-    margin-top: 15px;
-}
-
-.team_main .team_text h4 {
-    font-family: var(--wald);
-    font-weight: 400;
-    font-size: 14px;
-    color: #444;
-    text-transform: capitalize;
-    margin: 5px 0 10px;
-}
-
-.team_main .team_text p {
-    font-family: var(--sans);
-    font-weight: 400;
-    font-size: 13px;
-    color: #444;
-    line-height: 18px;
-    padding: 0 10px;
-    margin-bottom: 20px;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-}
-
-.team_main:hover .team_text p {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-}
-
-.team_main:hover .team_text {
-    border: 1px solid #ddd;
-}
-
-.team_slider .slick-slide{
-    margin: 0 12px;
-}
-
-/* =========================================================
-                    Team CSS End
-=========================================================== */
-/* =========================================================
-                    Textimonial CSS Start
-=========================================================== */
-#testi {
-    padding: 40px 0;
-}
-
-.test_ban {
-    padding: 30px 0 80px;
-    position: relative;
-}
-
-.test_ban::after {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.testi_box h2,
-.testi_box h3 {
-    font-family: var(--wald);
-    font-weight: 400;
-    font-size: 14px;
-    color: #fff;
-    margin-bottom: 5px;
-}
-
-.testi_box h2 {
-    text-transform: uppercase;
-}
-
-.testi_box p {
-    font-family: var(--sans);
-    font-weight: 400;
-    font-size: 13px;
-    color: #ddd;
-    margin-top: 5px;
-}
-
-.testi_box i {
-    font-size: 14px;
-    color: var(--hover);
-}
-
-.test_slider {
-    position: relative;
-}
-
-.test_slider ul {
-	position: absolute;
-	left: 50%;
-	bottom: -50px;
-	display: flex;
-	transform: translateX(-50%);
-	width: auto;
-}
-.test_slider ul li {
-    margin: 0 5px;
-}
-
-.test_slider ul li button {
-    font-size: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background: transparent;
-}
-
-.test_slider ul .slick-active button {
-    width: 20px;
-    height: 20px;
-    background: var(--hover);
-    border-color: var(--hover);
-}
-
-.test_slider .slick-slide {
-    padding: 0 15px;
-}
 
 /* =========================================================
                     Textimonial CSS End
@@ -685,6 +499,8 @@ ol {
 =========================================================== */
 #member {
     padding: 40px 0;
+    box-shadow: 0 0 700px  #222;
+    border-radius: 50px;
 }
 #member h3{
     color: #c1272d;
@@ -842,6 +658,7 @@ ol {
 =========================================================== */
 #footer {
     padding: 30px 0 20px;
+    
 }
 #footer h3{
     color: #c1272d;
